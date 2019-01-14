@@ -1,0 +1,15 @@
+{
+    "python.linting.enabled": false,
+    "python.pythonPath": "C:\\Users\\Kayel\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe",
+    "python.unitTest.unittestArgs": [
+        "-v",
+        "-s",
+        "./python",
+        "-p",
+        "*test.py"
+    ],
+    "python.unitTest.pyTestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false,
+    "python.unitTest.unittestEnabled": false,
+    "python.unitTest.promptToConfigure": false
+}

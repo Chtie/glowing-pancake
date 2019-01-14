@@ -1,8 +1,19 @@
 {
 
     "version": "0.2.0",
-    "configurations": [{
-            "name": "谷歌浏览器", //运行html文件，用谷歌浏览器打开
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - test_01",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "test_01",
+            "args": ""
+        },
+        {
+            "name": "谷歌浏览器",
             "type": "chrome",
             "request": "launch",
             "url": "${file}",
@@ -10,10 +21,10 @@
             "webRoot": "${workspaceRoot}"
         },
         {
-            "name": "nodeLauch", //单独调试js，即可以直接运行js
+            "name": "nodeLauch",
             "type": "node",
             "request": "launch",
-            "program": "${file}", //这个配置成你要调试的文件、${file}当前打开的文件
+            "program": "${file}",
             "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",
@@ -27,7 +38,7 @@
             "console": "internalConsole",
             "preLaunchTask": "",
             "sourceMaps": false,
-            "outDir": null
+            "outFiles": null
         }
     ]
 }
