@@ -1,44 +1,23 @@
 {
-
-    "version": "0.2.0",
-    "configurations": [
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
         {
-            "type": "java",
-            "name": "CodeLens (Launch) - test_01",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "test_01",
-            "args": ""
-        },
-        {
-            "name": "谷歌浏览器",
-            "type": "chrome",
-            "request": "launch",
-            "url": "${file}",
-            "sourceMaps": true,
-            "webRoot": "${workspaceRoot}"
-        },
-        {
-            "name": "nodeLauch",
-            "type": "node",
-            "request": "launch",
-            "program": "${file}",
-            "stopOnEntry": false,
-            "args": [],
-            "cwd": "${workspaceRoot}",
-            "runtimeExecutable": null,
-            "runtimeArgs": [
-                "--nolazy"
+            "taskName": "Python",
+            "type": "shell",
+            "command": "${workspaceRoot}/env/bin/python3.5",
+            "args": [
+                "${file}"
             ],
-            "env": {
-                "NODE_ENV": "development"
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
             },
-            "console": "internalConsole",
-            "preLaunchTask": "",
-            "sourceMaps": false,
-            "outFiles": null
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
